@@ -24,3 +24,31 @@ int main(){
 
     int opcion;
     cin>>opcion;
+    switch (opcion)
+    {
+    case 1:
+        double lado;
+        cout<<"Ingrese lado: "<<endl;
+        cin>>lado;
+        cout<<"Resultado: "<<areaCuadrado(lado)<<endl;
+        break;
+    case 2:
+        double base, altura;
+        cout<<"Ingrese base: "<<endl;
+        cin>>base;
+        cout<<"Ingrese altura: "<<endl;
+        cin>>altura;
+        cout<<"Resultado: "<<areaRectangulo(base, altura)<<endl;
+        break;
+    case 3:
+        double radio;
+        cout<<"Ingrese lado: "<<endl;
+        cin>>radio;
+        cout<<"Resultado: "<<areaCirculo(radio)<<endl;
+        break;
+    default:
+        cout<<"ingrese la opcion correcta!"<<endl;
+        break;
+    }
+    return 0;
+}
